@@ -51,7 +51,7 @@ try:  # pragma: no cover  # noqa
         for circle, label in zip(circles, labels):
             x, y, r = circle
             ax.add_patch(plt.Circle((x, y), r, alpha=0.2, linewidth=2, fill=False))
-            ax.text(x, y, label)
+            # ax.text(x, y, label)
         enclosure = enclose(circles)
         n = len(circles)
         if enclosure in circles:
